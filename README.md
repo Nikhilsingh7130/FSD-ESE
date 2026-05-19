@@ -2,6 +2,10 @@
 
 A comprehensive MERN Stack application for managing citizen complaints with AI-powered analysis and automated routing.
 
+## 🚀 Live Project Links
+- **Frontend URL**: [https://complaint-ese.onrender.com](https://complaint-ese.onrender.com)
+- **Backend API URL**: [https://fsd-ese-jedh.onrender.com](https://fsd-ese-jedh.onrender.com)
+
 ## Project Overview
 
 This B.Tech 4th Semester Project implements an intelligent complaint management system with the following features:

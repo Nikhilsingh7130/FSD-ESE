@@ -70,12 +70,18 @@ function ComplaintDetails() {
           <AIAnalysisDisplay complaint={complaint} />
         </div>
         
-        {isAdmin && (
-          <div className="admin-actions-card">
-            <h3>Admin Controls</h3>
-            <ComplaintStatusUpdate complaintId={complaint._id} />
+        <div className="admin-actions-card" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div>
+            <h3 style={{ borderBottom: 'none', margin: 0, padding: 0 }}>Update Status</h3>
+            <p style={{ margin: '0.5rem 0 0 0' }}>Manually update the current status of this complaint.</p>
           </div>
-        )}
+          <button 
+            className="btn-new-complaint" 
+            onClick={() => navigate(`/update-status/${complaint._id}`)}
+          >
+            Go to Status Page
+          </button>
+        </div>
       </div>
     </div>
   );

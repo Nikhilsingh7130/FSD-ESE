@@ -30,37 +30,42 @@ function Register() {
 
   return (
     <div className="auth-container">
-      <h1>Register</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Full Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password (min 6 characters)"
-          value={formData.password}
-          onChange={handleChange}
-          required
-        />
-        <button type="submit" disabled={loading}>
-          {loading ? 'Registering...' : 'Register'}
-        </button>
-      </form>
-      {error && <p className="error">{error}</p>}
+      <div className="auth-form">
+        <h2>Create Account</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password (min 6 characters)"
+            value={formData.password}
+            onChange={handleChange}
+            required
+          />
+          <button type="submit" disabled={loading}>
+            {loading ? 'Registering...' : 'Sign Up'}
+          </button>
+        </form>
+        {error && <p className="error" style={{ color: '#ef4444', marginTop: '1rem', textAlign: 'center' }}>{error}</p>}
+        <div className="auth-link">
+          Already have an account? <span onClick={() => navigate('/login')}>Login here</span>
+        </div>
+      </div>
     </div>
   );
 }

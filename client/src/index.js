@@ -8,6 +8,7 @@ import Register from './pages/Register';
 import ComplaintRegistration from './components/ComplaintRegistration';
 import ComplaintList from './components/ComplaintList';
 import ComplaintDetails from './components/ComplaintDetails';
+import UpdateStatusPage from './pages/UpdateStatusPage';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
         <Route path="/complaints" element={<Layout><ComplaintList /></Layout>} />
         <Route path="/file-complaint" element={<Layout><ComplaintRegistration /></Layout>} />
         <Route path="/complaint/:id" element={<Layout><ComplaintDetails /></Layout>} />
+        <Route path="/update-status/:id" element={<Layout><UpdateStatusPage /></Layout>} />
       </Routes>
     </Router>
   </React.StrictMode>

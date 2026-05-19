@@ -1,63 +1,61 @@
 .status-update {
-  max-width: 500px;
-  margin: 2rem auto;
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 .status-update h2 {
-  color: #333;
+  font-size: 1.25rem;
   margin-bottom: 1.5rem;
+  color: var(--text-main);
+  display: none; /* Hidden because the card already has a heading */
 }
 
 .status-update form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .status-update select,
 .status-update input {
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: #f8fafc;
+  color: var(--text-main);
+  transition: all var(--transition-fast);
 }
 
 .status-update select:focus,
 .status-update input:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+  border-color: var(--primary-color);
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
-.status-update button {
-  padding: 0.75rem;
-  background: #667eea;
+.status-update button[type="submit"] {
+  background-color: var(--text-main);
   color: white;
+  padding: 0.875rem;
   border: none;
-  border-radius: 4px;
+  border-radius: var(--radius-md);
   font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
 }
 
-.status-update button:hover:not(:disabled) {
-  background: #764ba2;
+.status-update button[type="submit"]:hover:not(:disabled) {
+  background-color: #000;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
 }
 
 .status-update button:disabled {
-  background: #ccc;
+  background-color: #94a3b8;
   cursor: not-allowed;
-}
-
-.status-update .message {
-  color: #27ae60;
-  text-align: center;
-  margin-top: 1rem;
-  padding: 1rem;
-  background: #d5f4e6;
-  border-radius: 4px;
 }

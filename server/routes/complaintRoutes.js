@@ -17,8 +17,8 @@ router.get('/', authenticateToken, complaintController.getMyComplaints);
 // Get Complaint by ID
 router.get('/:id', authenticateToken, complaintController.getComplaintById);
 
-// Update Complaint Status (Admin only)
-router.put('/:id', authenticateToken, authorizeAdmin, complaintController.updateComplaintStatus);
+// Update Complaint Status
+router.put('/:id', authenticateToken, complaintController.updateComplaintStatus);
 
 // Search by Location
 router.get('/search/location', authenticateToken, complaintController.searchByLocation);
