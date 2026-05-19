@@ -1,0 +1,63 @@
+.status-update {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.status-update h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.status-update form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.status-update select,
+.status-update input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.status-update select:focus,
+.status-update input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+.status-update button {
+  padding: 0.75rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.status-update button:hover:not(:disabled) {
+  background: #764ba2;
+}
+
+.status-update button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.status-update .message {
+  color: #27ae60;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #d5f4e6;
+  border-radius: 4px;
+}

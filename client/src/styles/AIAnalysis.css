@@ -1,0 +1,79 @@
+.ai-analysis-display {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ai-analysis-display h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.analysis-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.analysis-item label {
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.analysis-item span {
+  color: #555;
+  font-size: 1rem;
+}
+
+.priority {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.priority-critical {
+  background: #e74c3c;
+  color: white;
+}
+
+.priority-high {
+  background: #e67e22;
+  color: white;
+}
+
+.priority-medium {
+  background: #f39c12;
+  color: white;
+}
+
+.priority-low {
+  background: #27ae60;
+  color: white;
+}
+
+.analysis-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.auto-response-box {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.auto-response-box p {
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
