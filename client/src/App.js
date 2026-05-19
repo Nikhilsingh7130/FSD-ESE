@@ -13,12 +13,7 @@ function App() {
     }
   }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    setUser(null);
-    navigate('/login');
-  };
+
 
   return (
     <div className="App">
